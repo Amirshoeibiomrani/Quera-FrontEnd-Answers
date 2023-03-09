@@ -1,0 +1,46 @@
+@font-face
+{
+    font-family: Vazir;
+    src: url("./assets/Vazir.ttf");
+}
+
+* 
+{
+  font-family: Vazir;
+}
+
+.container
+{
+    width: 700px;
+    height: 800px;
+    max-width: 100%;
+
+    padding: 15px;
+
+    border-radius: 10px;
+    border-right: 10px solid #6868f0;
+
+    background-image: url("./assets/logo.svg");
+    background-repeat: no-repeat;
+    background-color: #acd6e6;
+    background-size: 500px;
+    background-position: center;
+}
+
+h1
+{
+    color: rgb(29, 131, 167);
+}
+
+#user-name
+{
+    color: #0a99cc;
+}
+
+h2
+{
+    margin-right: 35px;
+
+    color: white;
+}
+

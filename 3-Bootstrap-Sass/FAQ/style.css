@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Vazir;
+    src: url('./assets/Vazir.ttf');
+}
+
+body {
+    text-align: right;
+}
+
+* {
+    font-family: Vazir !important;
+}

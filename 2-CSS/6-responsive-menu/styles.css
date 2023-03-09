@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Vazir;
+    src: url("./assets/Vazir.ttf");
+}
+
+* {
+    font-family: Vazir;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #0a99cc;
+}
+
+li {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+ul {
+    all: initial;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.hover::after {
+    position: absolute;
+    content: "";
+    border-radius: 5px 0 0 5px;
+    height: 40px;
+    width: 5px;
+    background-color: #fff;
+    right: 0px;
+}
+
+@media (min-width: 576px) {
+    li {
+        width: 100px;
+        justify-content: center;
+        padding-right: 0;
+    }
+    ul {
+        flex-direction: row;
+    }
+    .hover::after {
+        border-radius: 5px 5px 0 0;
+        height: 3px;
+        width: unset;
+        right: 28px;
+        left: 28px;
+        bottom: 0px;
+    }
+}
+
+/*
+Add these styles to .hover element with after pseudo-class in mobile mode
+border-radius: 5px 0 0 5px;
+height: 40px;
+width: 5px;
+background-color: #fff;
+
+Add these styles to li in desktop mode
+width: 100px;
+justify-content: center;
+padding-right: 0;
+
+Add these styles to .hover element with after pseudo-class in desktop mode
+border-radius: 5px 5px 0 0;
+height: 3px;
+*/

@@ -1,0 +1,42 @@
+@font-face 
+{
+  font-family: Vazir;
+  src: url("./assets/Vazir.ttf");
+}
+
+* 
+{
+  font-family: Vazir;
+}
+
+table
+{
+    margin: 0 auto;
+    
+    border-collapse: collapse;
+
+    width: 100%;
+    max-width: 800px;
+}
+
+tbody tr:hover 
+{
+  background-color: #e7e7e7;
+}
+
+th, td
+{
+    border: 1px solid #dddddd;
+
+    text-align: center;
+
+    padding: 10px 0px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+
+

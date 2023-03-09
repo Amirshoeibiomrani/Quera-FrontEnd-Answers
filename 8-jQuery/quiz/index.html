@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form id="quizForm">
+        <div class="question">
+            <h3>سوال تستی</h3>
+            <div class="choices">
+                <div class="choice">
+                    <label for="">Choice A</label>
+                    <input type="radio" name="question1" id="" value="1" />
+                </div>
+                <div class="choice">
+                    <label for="">Choice B</label>
+                    <input type="radio" name="question1" id="" value="2" />
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="results">
+        <div><span>جواب های درست: </span><span id="rightAnswers">0</span></div>
+        <div><span>جواب های اشتباه: </span><span id="wrongAnswers">0</span></div>
+        <div><span>بدون جواب ها: </span><span id="emptyAnswers">0</span></div>
+    </div>
+
+    <script src="assets/jquery-3.5.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
