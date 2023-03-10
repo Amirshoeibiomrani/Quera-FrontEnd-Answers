@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 8px;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+}
+
+#slider {
+  position: relative;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+#slider img {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  transition: all .5s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

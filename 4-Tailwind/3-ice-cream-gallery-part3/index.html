@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="tailwind.js"></script>
+		<script>
+			try {
+				tailwind.config = {
+					theme: {
+						extend: {
+							fontFamily: {
+								vazir: "'Vazir', sans-serif",
+							},
+						},
+					},
+				};
+			} catch {}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				@font-face {
+					font-family: "Vazir";
+					font-weight: normal;
+					src: url("./fonts/Vazir.ttf");
+				}
+
+				@font-face {
+					font-family: "Vazir";
+					font-weight: bold;
+					src: url("./fonts/Vazir-Bold.ttf");
+				}
+			}
+
+			@layer utilities {
+				.max-width-wrapper {
+					@apply;
+				}
+				.primary-gradient {
+					@apply;
+				}
+
+				.gradient-border {
+					@apply before:primary-gradient relative before:absolute before:w-full before:h-full before:-z-10 before:rounded-md before:transition-transform before:duration-300 before:content-[''] hover:before:scale-105;
+				}
+			}
+
+			@layer components {
+				.ice-cream {
+					@apply gradient-border;
+				}
+				.ice-cream img {
+					@apply w-72 h-60 rounded-md object-cover;
+				}
+			}
+		</style>
+	</head>
+	<body class="font-vazir bg-gray-400 min-h-[1000px]">
+		<!--PASTE YOUR CODE FROM PREVIOUS SECTIONS -->
+
+		<main
+			class="
+				max-width-wrapper
+				flex flex-wrap
+				justify-center
+				gap-4
+				md:gap-6
+				lg:gap-8
+				py-10
+				lg:py-20
+			"
+		>
+			<figure class="ice-cream">
+				<img src="./images/1.jpg" />
+			</figure>
+			<figure class="ice-cream">
+				<img src="./images/2.jpg" />
+			</figure>
+			<figure class="ice-cream">
+				<img src="./images/3.jpg" />
+			</figure>
+			<figure class="ice-cream">
+				<img src="./images/4.jpg" />
+			</figure>
+			<figure class="ice-cream">
+				<img src="./images/5.jpg" />
+			</figure>
+			<figure class="ice-cream">
+				<img src="./images/6.jpg" />
+			</figure>
+		</main>
+	</body>
+</html>

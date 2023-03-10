@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      try {
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                vazir: "'Vazir', sans-serif",
+              },
+            },
+          },
+        };
+      } catch {}
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: "Vazir";
+          font-weight: normal;
+          src: url("./fonts/Vazir.ttf");
+        }
+
+        @font-face {
+          font-family: "Vazir";
+          font-weight: bold;
+          src: url("./fonts/Vazir-Bold.ttf");
+        }
+      }
+
+      @layer utilities {
+        .max-width-wrapper {
+          @apply;
+        }
+        .primary-gradient {
+          @apply;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-vazir">
+    <!-- PUT YOUR CODE FROM PREVIOUS SECTION HERE-->
+    <div id="hero-wrapper" class="h-[60vh] min-h-[18rem] flex bg-[#fff899] relative justify-center">
+      <img src="./images/hero.jpg" id="hero-image" class="h-full w-96 object-cover"/>
+      <img src="./images/wave.svg" id="hero-wave" class="absolute bottom-0 w-full max-h-40"/>
+    </div>
+  </body>
+</html>
